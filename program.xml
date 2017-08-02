@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<programtask>
+    <!-- 节目单 -->
+    <programs>
+        <!-- 节目1 -->
+        <programItem>
+            <!-- 素材 -->
+            <matItems>
+            	<!-- sortNum 是素材的播发优先级，同一块显示区域，允许多个素材循环播放显示 数值越小优先级越高 -->
+            	<!-- itemId  显示区块的唯一标识  -->
+                <matItem itemId="text_3_1496805271496" sortNum="1">
+                	<!-- type 是素材的类型也是其在显示图层中的等级，大的优先级高 -->
+                	<!-- 1:图片，2:视频，3:音频，4:文字,5:网址 -->
+                    <material type="4">
+                        <content>测试文字测试文字测试文字测试文字测试文字测试文字</content>
+                        <matName>测试文字</matName>
+                    </material>
+                </matItem>
+                <matItem itemId="url_4_1496805277605" sortNum="1">
+                    <material type="5">
+                        <content>http://map.baidu.com</content>
+                        <matName>百度地图</matName>
+                    </material>
+                </matItem>
+                <matItem itemId="video_2_1496805266232" sortNum="1">
+                    <material suffix="mp4" type="2">
+                        <matName>7266015BB22649A291DD97BC11653DA2.mp4</matName>
+                        <path>20170513/068b5bae-8ccc-4f25-80a9-5a987608fb41.mp4</path>
+                    </material>
+                </matItem>
+                <matItem itemId="video_2_1496805266232" sortNum="2">
+                    <material suffix="mp4" type="2">
+                        <matName>test2.mp4</matName>
+                        <path>20170513/84da084c-2714-4e15-ab63-52da81ff4040.mp4</path>
+                    </material>
+                </matItem>
+            </matItems>
+            <!-- 节目基础设置 -->
+            <program height="1920" width="1080">
+                <!-- 各个显示区块的位置，和大小 -->
+                <items>[
+					{
+						"id": "image_1_1496805256519",
+						"x": 0,
+						"y": 0,
+						"width": 4,
+						"height": 4
+					},
+					{
+						"id": "video_2_1496805266232",
+						"x": 6,
+						"y": 0,
+						"width": 5,
+						"height": 4
+					},
+					{
+						"id": "url_4_1496805277605",
+						"x": 0,
+						"y": 5,
+						"width": 18,
+						"height": 9
+					},
+					{
+						"id": "text_3_1496805271496",
+						"x": 12,
+						"y": 0,
+						"width": 6,
+						"height": 4
+					}
+				]</items>
+            </program>
+            <!-- 定时任务 -->
+            <!-- playNum 	节目优先级 数值越小越优先级越高 -->
+            <!-- week 		指定星期几播发 -->
+            <programTaskRelation beginDate="2017-07-25" beginTime="11:07:00" endDate="2017-07-31" endTime="15:05:38" playNum="1" week="2,7"/>
+        </programItem>
+        <!-- 节目2 -->
+        <programItem>
+            <matItems>
+                <matItem itemId="video_1_1501133859273" sortNum="1">
+                    <material fileSize="27.07" suffix="mp4" type="2">
+                        <matName>test3.mp4</matName>
+                        <path>20170513/5e45fe8e-de45-4881-adda-ae0c9aa20ba6.mp4</path>
+                    </material>
+                </matItem>
+            </matItems>
+            <program height="1080" width="1920">
+                <items>[
+					{
+						"id": "video_1_1501133859273",
+						"x": 0,
+						"y": 0,
+						"width": 32,
+						"height": 15
+					}
+				]</items>
+            </program>
+            <programTaskRelation beginDate="" beginTime="15:52:30" endDate="" endTime="15:53:00" playNum="2" week="2,4"/>
+        </programItem>
+        <!-- 节目2 -->
+        <programItem>
+            <matItems>
+                <matItem itemId="video_1_1501124075270" sortNum="1">
+                    <material fileSize="27.07" suffix="mp4" type="2">
+                        <matName>test3.mp4</matName>
+                        <path>20170513/5e45fe8e-de45-4881-adda-ae0c9aa20ba6.mp4</path>
+                    </material>
+                </matItem>
+                <matItem itemId="video_2_1501124080477" sortNum="1">
+                    <material suffix="mp4" type="2">
+                        <matName>test2.mp4</matName>
+                        <path>20170513/84da084c-2714-4e15-ab63-52da81ff4040.mp4</path>
+                    </material>
+                </matItem>
+                <matItem itemId="url_4_1501124100117" sortNum="1">
+                    <material type="5">
+                        <content>http://map.baidu.com</content>
+                        <matName>百度地图</matName>
+                    </material>
+                </matItem>
+            </matItems>
+            <program height="1080" width="1920">
+                <items>[
+					{
+						"id": "video_1_1501124075270",
+						"x": 0,
+						"y": 0,
+						"width": 11,
+						"height": 4
+					},
+					{
+						"id": "video_2_1501124080477",
+						"x": 20,
+						"y": 0,
+						"width": 12,
+						"height": 4
+					},
+					{
+						"id": "audio_3_1501124091750",
+						"x": 12,
+						"y": 5,
+						"width": 7,
+						"height": 1
+					},
+					{
+						"id": "url_4_1501124100117",
+						"x": 11,
+						"y": 9,
+						"width": 9,
+						"height": 3
+					}
+				]</items>
+            </program>
+            <programTaskRelation beginDate="2017-07-27" beginTime="11:06:00" endDate="2017-07-28" endTime="15:05:38" playNum="3" week="4"/>
+        </programItem>
+    </programs>
+</programtask>
